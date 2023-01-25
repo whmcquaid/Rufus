@@ -2,7 +2,8 @@ import git
 import datetime
 from pytz import timezone
 
-now_utc = datetime.datetime.now(timezone('UTC'))
+# What is Rufus coderbyte challenge:
+# Documentation to gitpython can be found at https://gitpython.readthedocs.io/en/stable/
 
 def print_git_status(git_dir):
   try:
@@ -10,6 +11,7 @@ def print_git_status(git_dir):
     head = repo.head
     active_branch = repo.active_branch
     is_dirty = repo.is_dirty()
+    now_utc = datetime.datetime.now(timezone('UTC'))
     one_week_ago = now_utc - datetime.timedelta(weeks=1)
     updated_this_week = head.commit.authored_datetime > one_week_ago
     authored_by_rufus = head.commit.author.name == 'Rufus'
