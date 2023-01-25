@@ -11,7 +11,7 @@ def print_git_status(git_dir):
     active_branch = repo.active_branch
     is_dirty = repo.is_dirty()
     one_week_ago = now_utc - datetime.timedelta(weeks=1)
-    updated_recently = head.commit.authored_datetime > one_week_ago
+    updated_this_week = head.commit.authored_datetime > one_week_ago
     authored_by_rufus = head.commit.author.name == 'Rufus'
     print(f'active branch: {active_branch}')
     print(f'local changes: {is_dirty}')
