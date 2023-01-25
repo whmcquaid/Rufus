@@ -12,4 +12,4 @@ To try this program yourself:
 * Open rufus.py in your code editor
 * Uncomment the bottom line of code where the function is invoked and replace </sample/pathto/myrepo> with a file path to a local git repo
 * Now you're almost there! Hit Run Python File - Play button - top right of VSCode
-* You should see the expected output if you put in a correct path to a local repo or an error message if not
+* You should see the expected output in the terminal if you put in a correct file path to a local repo or an error message if not
